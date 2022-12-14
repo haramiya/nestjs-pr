@@ -67,3 +67,9 @@
 
 ![Serviceサンプル](/memos/service.png)
 ![Controller-Serviceサンプル](/memos/controller-to-service.png)
+
+# DTO
+
+- メンテナンス性が高まる
+- 安全性が高まる
+- バリデーション機能が使える
