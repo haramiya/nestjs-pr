@@ -95,3 +95,26 @@
 - ハンドラへの適用
 - パラメータごとに適用
 - グローバルへの適用
+
+# ORM
+
+## ORM とは
+
+- オブジェクト指向の言語と RDB の非互換なデータをマッピングする役割
+  - オブジェクト指向：現実世界の物事に即したデータモデル
+
+## NestJS の ORM ライブラリ
+
+- TypeORM
+
+## TypeORM
+
+- Entity
+  - RDB のテーブルと対応するオブジェクト
+  - @Entity デコレータをつけたクラスとして定義する
+  - @PrimaryGeneratedColumn デコレーターや@Column デコレーターがついたプロパティが RDB の Column とマッピングされる
+- Repository
+  - Entity を管理するためのオブジェクト
+  - Entity と Repository が 1 対 1 となり、データベース操作を抽象化する
+  - クラスに@EntityRepository()デコレータをつけて、Repository を継承する
+    ![Repositoryサンプル](/memos/repository.png)
